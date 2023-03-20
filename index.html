@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Olimpo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: verdana, sans-serif;
+            font-size: small;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-piedra-trazos-dorados_125540-130.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .float {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .Header {}
+
+        .Header h1 {
+            padding: 13px;
+            margin-bottom: 10px;
+            font-size: large;
+        }
+
+        .LeftPanel {
+            position: absolute;
+            top: 100px;
+            left: 10px;
+            width: 150px;
+            background-color: #eee;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            padding-bottom: 8px;
+        }
+
+        .RightPanel {
+            position: absolute;
+            top: 180px;
+            right: 10px;
+            width: 150px;
+            background-color: #eee;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        .LeftPanel h1,
+        .RightPanel h1 {
+            background-color: red;
+            color: white;
+            font-size: small;
+            padding: 6px;
+            margin-bottom: 3px;
+        }
+
+        .CenterPanel {
+            margin-left: 1px;
+            margin-right: 151px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .CenterPanel h2 {
+            font-size: medium;
+            margin-bottom: 2px;
+            padding-bottom: 0px;
+        }
+
+        .CenterPanel p {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        form {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img border="0" src="imagenes/logo.png" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Indice
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Accion 1</a>
+                      <a class="dropdown-item" href="#">Accion 2</a>
+                      <a class="dropdown-item" href="#">Accion 3</a>
+                    </div>
+                  </div>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Registro_Cliente.html">Registro de Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Registro_Pedidos.html">Registro de Pedidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Registrar_Usuario.html">Registro de Usuario</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="Header">
+        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><H1><b>"Los momentos dulces nunca terminan..."</i></b></H1><br>-->
+        <H1>"Los momentos dulces nunca terminan..."</H1>
+    </div>
+    <div class="RightPanel">
+        <h1>Contactanos</h1>
+        <p>
+            Paseo Triunfo 3241,<br>
+            Col. Puerto de Torres,<br>
+            Ciudad Juarez, Chihuahua, Mexico.<br>
+            Servicio a Domicilio,<br>
+            Costo extra del 15% de la compra total.<br>
+        <p>
+        <p>Compre con confianza.<br>
+            ¡Usamos PayPal!</br>
+        </p>
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
+            <input type="image" style="margin: 3px" src="https://www.paypal.com/en_US/i/btn/view_cart.gif" border="0"
+                name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+            <input type="hidden" name="display" value="1">
+            <input type="hidden" name="page_style" value="DIOSESDELAMOR">
+        </form>
+    </div>
+
+    <div class="CenterPanel">
+        <p>
+            <img border="0" src="imagenes/Cupcake.jpg" class="float" width="130px" height="110px">
+        <h2>CupCake Cupido </h2>
+        <p style="margin: 0px">Sabor chocolate, con relleno de fresa, betun sabor fresa, granillo de corazones y
+            frambuesa.
+            Puede incluir alguna dedicatoria.Incluye 3 piezas.($10.50)
+        </p>
+        <form style="margin-top: 5px" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input style="margin: 0px" type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif"
+                border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+            <input type="hidden" name="add" value="1">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
+            <input type="hidden" name="item_name" value="Cupcake Cupido">
+            <input type="hidden" name="item_number" value="Food-001">
+            <input type="hidden" name="amount" value="10.50">
+            <input type="hidden" name="page_style" value="DIOSESDELAMOR">
+            <input type="hidden" name="no_note" value="1">
+            <input type="hidden" name="currency_code" value="USD">
+            <br style="clear: both;">
+        </form>
+
+        <p><img border="0" src="imagenes/Macarrones.jpg" class="float" width="130px" height="110px"></p>
+        <h2>Dulces Corazones</h2>
+        <p style="margin: 0px">Sabor frutos rojos, relleno de queso crema con durazno. Incluye 6 piezas.($15.00)</p>
+        <form style="margin-top: 5px" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit"
+                alt="Make payments with PayPal - it's fast, free and secure!">
+            <input type="hidden" name="add" value="1">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
+            <input type="hidden" name="item_name" value="Dulces Corazones">
+            <input type="hidden" name="item_number" value="Food-002">
+            <input type="hidden" name="amount" value="15.00">
+            <input type="hidden" name="page_style" value="DIOSESDELAMOR">
+            <input type="hidden" name="no_note" value="1">
+            <input type="hidden" name="currency_code" value="USD">
+        </form>
+
+        <br style="clear: both;">
+        <p><img border="0" src="imagenes/pastel.jpg" class="float" width="130px" height="110px"></p>
+        <h2>Pastel Encantado</h2>
+        <p style="margin: 0px">Sabor de 3 leches de chocolate, Relleno de nuez, decoraciones de fondant comestible.
+            Puede
+            incluir alguna dedicatoria y puede traer regalo sorpresa. ($35.00)</p>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit"
+                alt="Make payments with PayPal - it's fast, free and secure!">
+            <input type="hidden" name="add" value="1">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
+            <input type="hidden" name="item_name" value="Pastel Encantado">
+            <input type="hidden" name="item_number" value="Food-003">
+            <input type="hidden" name="amount" value="35.00">
+            <input type="hidden" name="page_style" value="DIOSESDELAMOR">
+            <input type="hidden" name="no_note" value="1">
+            <input type="hidden" name="currency_code" value="USD">
+            <br style="clear: both;">
+        </form>
+
+        <p><img border="0" src="imagenes/Galletas.jpg" class="float" width="130px" height="110px"></p>
+        <h2>Cookies Love</h2>
+        <p style="margin: 0px">Galletas sabor mantequilla, avena de varias figuras y tamaños, granillo de varios
+            colores.
+            Incluye 10 piezas. ($8.00)</p>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" border="0" name="submit"
+                alt="Make payments with PayPal - it's fast, free and secure!">
+            <input type="hidden" name="add" value="1">
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="business" value="matthewpmacdonald@hotmail.com">
+            <input type="hidden" name="item_name" value="Cookies Love">
+            <input type="hidden" name="item_number" value="Food-004">
+            <input type="hidden" name="amount" value="8.00">
+            <input type="hidden" name="page_style" value="DIOSESDELAMOR">
+            <input type="hidden" name="no_note" value="1">
+            <input type="hidden" name="currency_code" value="USD">
+            <br style="clear: both;">
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
